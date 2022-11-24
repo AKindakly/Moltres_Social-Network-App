@@ -1,0 +1,533 @@
+@font-face {
+    font-family: "MyFont";
+    src: url(./Aquire.otf) format("truetype");
+}
+
+body {
+    font-family: MyFont, Verdana, Tahoma;
+    margin: 0;
+}
+
+/* //////////////////////// WELCOME STYLES //////////////////////// */
+
+/* Welcome.jsx */
+.welcome-cont {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(#fffe22, #d90f0f);
+}
+
+.welcome-sml-cont h1 {
+    font-size: 90px;
+    margin-top: -25px;
+}
+
+.forms-sml-cont {
+    height: 350px;
+    width: 350px;
+    padding-bottom: 70px;
+    margin-right: 110px;
+    text-align: center;
+    box-shadow: rgb(0 0 0) 0px 0px 30px;
+}
+
+/* Login.jsx */
+.login-input {
+    display: flex;
+    width: 288px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 28px;
+    font-size: 17px;
+}
+
+.login-btn {
+    width: 294px;
+    height: 34px;
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.login-btn:active {
+    background-color: white;
+    color: black;
+}
+
+.forget-btn {
+    margin-top: 10px;
+}
+
+.forget-btn a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+.new-account-btn {
+    width: 225px;
+    height: 34px;
+    margin-top: 30px;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+/* ForgetPassword.jsx */
+.forget-password-input {
+    display: flex;
+    width: 285px;
+    height: 30px;
+    margin-left: 28px;
+    font-size: 17px;
+}
+
+.forget-password-btn {
+    width: 292px;
+    height: 34px;
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.forget-password-btn:active {
+    background-color: white;
+    color: black;
+}
+.forget-password-label {
+    margin-bottom: 10px;
+}
+
+.success {
+    font-size: 28px;
+    margin-top: 75px;
+}
+
+.success-link {
+    text-decoration: none;
+    font-size: 18px;
+}
+/* Registration.jsx */
+.register-input {
+    display: flex;
+    width: 283px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 28px;
+    font-size: 17px;
+}
+
+.register-btn {
+    width: 291px;
+    height: 34px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+.register-btn:active {
+    color: black;
+    background-color: white;
+}
+
+.back-login-btn a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+}
+
+.back-login-btn a:hover {
+    color: white;
+}
+/* //////////////////////// APP STYLES //////////////////////// */
+
+/* ///////////// body  ///////////// */
+
+.bg {
+    animation: slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(
+        -60deg,
+        rgb(217, 15, 15) 50%,
+        rgb(255, 254, 34) 50%
+    );
+    bottom: 0;
+    left: -50%;
+    opacity: 0.5;
+    position: fixed;
+    right: -50%;
+    top: 0;
+    z-index: -1;
+}
+
+.bg2 {
+    animation-direction: alternate-reverse;
+    animation-duration: 4s;
+}
+
+.bg3 {
+    animation-duration: 5s;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(-25%);
+    }
+    100% {
+        transform: translateX(25%);
+    }
+}
+
+/* ///////////// header  ///////////// */
+
+.app-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    font-size: 30px;
+    margin: -18px;
+}
+
+.sml-profile-pic {
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid;
+    height: 40px;
+    width: 40px;
+    margin-left: 60px;
+}
+
+.app-header p {
+    margin-left: 29px;
+    font-size: 29px;
+}
+/* 
+.logout-btn {
+    cursor: pointer;
+    margin-left: 21px;
+    padding: 6px;
+    font-size: 16px;
+}
+
+.logout-btn:hover,
+.logout-btn:focus {
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.logout-btn:hover {
+    transform: translateY(-7px);
+}
+
+.logout-btn:active {
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    transform: translateY(0);
+}
+ */
+/* ///////////// ppic uploader  ///////////// */
+
+.profilePicUploader-bigcont {
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0 0 0 / 74%);
+    z-index: 10;
+    color: white;
+    line-height: 6.5;
+    padding: 31px 85px;
+}
+
+.profilePicUploader-smlcont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profilePicUploader-smlcont p {
+    margin: -25px 0;
+    font-size: 20px;
+}
+
+.profilePicUploader-smlcont input {
+    width: 252px;
+    height: 35px;
+    margin: 14px 0;
+}
+
+/* ///////////// navbar  ///////////// */
+
+.app-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 150px;
+    border: 1px solid;
+    cursor: pointer;
+    text-align: center;
+    background-color: whitesmoke;
+}
+
+.navbar:hover,
+.navbar:focus {
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.navbar:hover {
+    transform: translateY(-7px);
+}
+
+.navbar:active {
+    background-color: #252a34;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: rgba(0, 0, 0, 0.65);
+    transform: translateY(0);
+}
+
+.navbar a {
+    padding: 30px 15px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+}
+
+.navbar a:active {
+    color: whitesmoke;
+}
+
+/* ///////////// profile  ///////////// */
+
+.profile-big-cont {
+    display: flex;
+    align-items: center;
+    border: 2px solid;
+    width: 756px;
+    margin: 0 auto;
+    margin-top: 10px;
+    background: whitesmoke;
+}
+
+.big-profile-pic {
+    width: 220px;
+    height: 220px;
+    margin: 40px;
+    border-radius: 20%;
+    border: 3px solid;
+    object-fit: cover;
+}
+
+.profile-big-cont h2 {
+    font-size: 34px;
+    margin-left: 30px;
+}
+
+.bio-cont {
+    margin-left: 30px;
+}
+
+.bio-cont p {
+    height: 53px;
+    max-width: 273px;
+    overflow: auto;
+    margin: 0;
+    padding: 12px 20px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    line-height: 1.5;
+    background-color: #d3d3d3;
+}
+
+.bio-cont textarea {
+    width: 100%;
+    height: 80px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: none;
+}
+
+/* ///////////// friends  ///////////// */
+
+.friends-big-cont {
+    border: 2px solid;
+    width: 756px;
+    margin: 0 auto;
+    margin-top: 10px;
+    background: whitesmoke;
+    margin-bottom: 50px;
+}
+
+.friends-big-cont h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.friends-sml-cont {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 35px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.friends-sml-cont ul {
+    padding: 0;
+    max-width: 150px;
+    margin-right: 30px;
+    list-style-type: none;
+    background-color: #252a34;
+    color: #eaeaea;
+    box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
+}
+
+.friends-sml-cont img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.friends-sml-cont p {
+    padding: 0 28px;
+}
+
+.friends-sml-cont button {
+    margin-bottom: 15px;
+}
+
+/* ///////////// other users  ///////////// */
+
+.other-profile-btn {
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+/* ///////////// find people  ///////////// */
+
+.find-people-big-cont {
+    border: 2px solid;
+    width: 756px;
+    margin: 0 auto;
+    margin-top: 10px;
+    background: whitesmoke;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.find-people-big-cont h3 {
+    font-size: 30px;
+}
+
+.find-people-big-cont input {
+    width: 345px;
+    height: 25px;
+    font-size: 16px;
+}
+
+.find-people-sml-cont ul {
+    padding: 0;
+    max-width: 200px;
+    list-style-type: none;
+    background-color: #252a34;
+    color: #eaeaea;
+    box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.find-people-sml-cont img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.find-people-sml-cont p {
+    padding-bottom: 19px;
+}
+
+.find-people-sml-cont ul:last-child {
+    margin-bottom: 40px;
+}
+
+/* ///////////// chat  ///////////// */
+
+.chat-big-cont {
+    border: 2px solid;
+    width: 756px;
+    margin: 0 auto;
+    margin-top: 10px;
+    background: whitesmoke;
+    margin-bottom: 50px;
+}
+
+.chats-cont ul {
+    display: flex;
+    flex-direction: column-reverse;
+    list-style-type: none;
+    padding: 0;
+    align-content: flex-start;
+    margin: 0 55px;
+    margin-top: 40px;
+    box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
+}
+
+.chats-cont li {
+    border: 2px solid;
+}
+
+.chat-user {
+    display: flex;
+    border: 1px solid;
+    margin: 10px;
+    background-color: #252a34;
+    color: white;
+}
+
+.chat-user p {
+    margin-left: 25px;
+    margin-top: 30px;
+}
+
+.chats-cont span {
+    margin-left: 71%;
+}
+
+.chat-chat {
+    border: 1px solid;
+    margin: 10px;
+    padding-left: 10px;
+}
+
+.new-message {
+    display: flex;
+    justify-content: center;
+}
+
+.new-message textarea {
+    width: 445px;
+    margin: 25px;
+    font-size: 16px;
+    padding: 15px;
+    box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
+}
