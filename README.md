@@ -17,5 +17,5 @@ There is also a real-time chatroom which keeps live track of who is actively cha
 
 ## Screenshots
 ![s1](https://user-images.githubusercontent.com/107426060/203870074-df7143b3-3e2f-4ff9-b899-ad3ab72be014.jpg)
-[](https://github.com/AKindakly/Spiced_Academy_SocialNetwork/blob/main/README.data/gif1.gif)
-[](https://github.com/AKindakly/Spiced_Academy_SocialNetwork/blob/main/README.data/gif2.gif)
+![](https://github.com/AKindakly/Spiced_Academy_SocialNetwork/blob/main/README.data/gif1.gif)
+![](https://github.com/AKindakly/Spiced_Academy_SocialNetwork/blob/main/README.data/gif2.gif)
