@@ -17,38 +17,43 @@ Overall, the Social Network App offers a comprehensive set of features that allo
 ## Technologies used:
 
 The Social Network App was built using a variety of modern technologies, including:
--   HTML5 and CSS3 for building the user interface and styling the application.
+-   **HTML5** and **CSS3** for building the user interface and styling the application.
 
--   React.js for building the user interface components and enabling the app's dynamic behavior.
+-   **React.js** for building the user interface components and enabling the app's dynamic behavior.
 
--   Redux for managing the app's state and enabling the implementation of complex features, such as real-time chat and friend requests.
+-   **Redux** for managing the app's state and enabling the implementation of complex features, such as real-time chat and friend requests.
 
--   Node.Js and Express.Js for building the server-side logic and enabling communication between the front-end and back-end.
+-   **Node.Js** and **Express.Js** for building the server-side logic and enabling communication between the front-end and back-end.
 
--   PostgresSQL for storing and retrieving data from a relational database.
+-   **PostgresSQL** for storing and retrieving data from a relational database.
 
--   Webpack for bundling and optimizing the app's code for deployment.
+-   **Webpack** for bundling and optimizing the app's code for deployment.
 
--   Babel for transpiling modern JavaScript code into browser-compatible code.
+-   **Babel** for transpiling modern JavaScript code into browser-compatible code.
 
 
 ## Installation and Deployment
 
 To run the Social Network App on your local machine, you'll need to follow these steps:
 
--   Clone the repository: First, clone the repository from GitHub to your local machine using Git or GitHub Desktop.
+-   **Clone the repository:** First, clone the repository from GitHub to your local machine.
 
--   Install dependencies: Navigate to the root directory of the project in your terminal and run npm install to install all the required dependencies.
+-   **Install dependencies:** Navigate to the root directory of the project in your terminal and ```run npm install```<br />
+ to install all the required dependencies.
 
--   Configure environment variables: Create a .env file in the root directory of the project and set the required environment variables, such as the database connection string and server port.
+-   **Configure environment variables:** Create a ```.env``` file in the root directory of the project and add to it <br />
+```DATABASE_URL=postgres:<your postgres username>:<your postgres password>@localhost:5432/<the db name>```.
 
--   Start the App: Run npm run dev to start the server.
+-   **Start the App:** Run ```npm run dev``` to start the server.
 
-Once the App is running, you can access the Social Network App by navigating to http://localhost:3000 in your browser.
+Once the App is running, you can access the Social Network App by navigating to **http://localhost:3000** in your browser.
 
 ## Demo
-You can view a live demo of the Social Network App at https://.com.
-Please note that this is a demo version of the app and some features may be limited or disabled.
+You can view a live demo of the Social Network App at https://.com.<br />
+Please note that this is a demo version of the app and some features may be limited or disabled.<br />
+For **FakeUser** login as<br />
+username:juniper02@example.com <br />
+password: juniper
 
 
 ## Screenshots
