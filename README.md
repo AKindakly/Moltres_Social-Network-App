@@ -42,11 +42,9 @@ To run the Social Network App on your local machine, you'll need to follow these
 
 -   Configure environment variables: Create a .env file in the root directory of the project and set the required environment variables, such as the database connection string and server port.
 
--   Build the app: Run npm run build to build the app using Webpack.
+-   Start the App: Run npm run dev to start the server.
 
--   Start the server: Run npm run dev to start the server.
-
-Once the server is running, you can access the Social Network App by navigating to http://localhost:3000 in your browser.
+Once the App is running, you can access the Social Network App by navigating to http://localhost:3000 in your browser.
 
 ## Demo
 You can view a live demo of the Social Network App at https://.com. Please note that this is a demo version of the app and some features may be limited or disabled.
