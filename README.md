@@ -1,6 +1,9 @@
-# Spiced_Academy_SocialNetwork
+# Moltres_SocialNetwork
 
-## the Project:
+Social Network App - Real-time Chat, Friend Requests, and User Profiles.
+
+
+## Description:
 
 The Social Network App is a single page application built with React.js, Socket.io, and Redux. This app allows users to register and log in, providing them with access to a range of features to enhance their social experience. Users can update their profile picture and biography to personalize their account.
 
@@ -9,6 +12,7 @@ One of the main features of the app is the ability to send and receive friend re
 Another key feature of the app is the real-time chatroom. Users can communicate with each other through the chatroom, with the app keeping live track of who is actively chatting. This feature creates a dynamic and interactive social environment for users to engage with each other.
 
 Overall, the Social Network App offers a comprehensive set of features that allow users to connect and communicate with each other in real-time. 
+
 
 ## Technologies used:
 
@@ -26,6 +30,26 @@ The Social Network App was built using a variety of modern technologies, includi
 -   Webpack for bundling and optimizing the app's code for deployment.
 
 -   Babel for transpiling modern JavaScript code into browser-compatible code.
+
+
+## Installation and Deployment
+
+To run the Social Network App on your local machine, you'll need to follow these steps:
+
+-   Clone the repository: First, clone the repository from GitHub to your local machine using Git or GitHub Desktop.
+
+-   Install dependencies: Navigate to the root directory of the project in your terminal and run npm install to install all the required dependencies.
+
+-   Configure environment variables: Create a .env file in the root directory of the project and set the required environment variables, such as the database connection string and server port.
+
+-   Build the app: Run npm run build to build the app using Webpack.
+
+-   Start the server: Run npm run dev to start the server.
+
+Once the server is running, you can access the Social Network App by navigating to http://localhost:3000 in your browser.
+
+## Demo
+You can view a live demo of the Social Network App at https://.com. Please note that this is a demo version of the app and some features may be limited or disabled.
 
 
 ## Screenshots
