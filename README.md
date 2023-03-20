@@ -42,7 +42,8 @@ To run the Social Network App on your local machine, you'll need to follow these
  to install all the required dependencies.
 
 -   **Configure environment variables:** Create a ```.env``` file in the root directory of the project and add to it <br />
-```DATABASE_URL=postgres:<your postgres username>:<your postgres password>@localhost:5432/<the db name>```.
+```DATABASE_URL=postgres:<your postgres username>:<your postgres password>@localhost:5432/<the db name>``` <br />
+```SESSION_SECRET= "this is a secret!!"```
 
 -   **Start the App:** Run ```npm run dev``` to start the server.
 
