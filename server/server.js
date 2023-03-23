@@ -7,7 +7,8 @@ const fs = require("fs");
 require("dotenv").config();
 const db = require("./db");
 const cookieSession = require("cookie-session");
-const cryptoRandomString = require("crypto-random-string");
+const cryptoRandomString = import("crypto-random-string").default;
+
 const { uploader, checkId } = require("./middleware.js");
 
 app.use(compression());

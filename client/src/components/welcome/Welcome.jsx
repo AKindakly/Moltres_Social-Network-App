@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Redirect } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Registration from "./Registration.jsx";
 import Login from "./Login.jsx";
 import ForgetPassword from "./ForgetPassword.jsx";
@@ -16,20 +16,18 @@ export default function Welcome() {
             </div>
             <div className="forms-sml-cont">
                 <BrowserRouter>
-                    <div>
-                        <Route exact path="/">
-                            <Login />
-                        </Route>
-                        <Route path="/registration">
-                            <Registration />
-                        </Route>
-                        <Route path="/forgetPassword">
-                            <ForgetPassword />
-                        </Route>
-                        <Route path="/">
-                            <Redirect to="/" />
-                        </Route>
-                    </div>
+                    <Routes>
+                        <Route path="/" element={<Login />} />
+                        <Route
+                            path="/registration"
+                            element={<Registration />}
+                        />
+                        <Route
+                            path="/forgetPassword"
+                            element={<ForgetPassword />}
+                        />
+                        <Route path="*" element={<Navigate to="/" />} />
+                    </Routes>
                 </BrowserRouter>
             </div>
         </div>

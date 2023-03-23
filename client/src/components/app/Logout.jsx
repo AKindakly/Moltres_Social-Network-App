@@ -1,15 +1,13 @@
-import { useHistory } from "react-router-dom";
-
-// import "../../../style.css";
+import { useNavigate } from "react-router-dom";
 
 export default function Logout() {
-    let history = useHistory();
-
     function handleLogut() {
+        const navigate = useNavigate();
+
         fetch("/logout")
             .then((res) => res.json())
             .then(() => {
-                history.push("/login");
+                navigate("/login");
                 window.location.reload();
             });
     }

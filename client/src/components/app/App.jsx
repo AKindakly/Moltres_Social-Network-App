@@ -1,5 +1,5 @@
 import { Component } from "react";
-import { BrowserRouter, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
 import Logo from "./Logo.jsx";
 import ProfilePic from "./ProfilePic.jsx";
@@ -126,29 +126,31 @@ export default class App extends Component {
                             />
                         )}
                     </div>
-                    <Route exact path="/profile">
-                        <Profile
-                            firstName={this.state.firstName}
-                            lastName={this.state.lastName}
-                            fullName={this.state.fullName}
-                            profilePic={this.state.profilePic}
-                            bio={this.state.bio}
-                            updateBio={this.updateBio}
-                            togglePopup={this.togglePopup}
+                    <Routes>
+                        <Route
+                            exact
+                            path="/profile"
+                            element={
+                                <Profile
+                                    firstName={this.state.firstName}
+                                    lastName={this.state.lastName}
+                                    fullName={this.state.fullName}
+                                    profilePic={this.state.profilePic}
+                                    bio={this.state.bio}
+                                    updateBio={this.updateBio}
+                                    togglePopup={this.togglePopup}
+                                />
+                            }
                         />
-                    </Route>
-                    <Route path="/people">
-                        <FindPeople />
-                    </Route>
-                    <Route path="/users/:id">
-                        <OtherProfile />
-                    </Route>
-                    <Route exact path="/friends">
-                        <Friends />
-                    </Route>
-                    <Route path="/chat">
-                        <Chat />
-                    </Route>
+
+                        <Route path="/people" element={<FindPeople />} />
+
+                        <Route path="/users/:id" element={<OtherProfile />} />
+
+                        <Route exact path="/friends" element={<Friends />} />
+
+                        <Route path="/chat" element={<Chat />} />
+                    </Routes>
                 </BrowserRouter>
             </div>
         );

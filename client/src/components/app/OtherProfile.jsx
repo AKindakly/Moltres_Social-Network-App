@@ -1,11 +1,11 @@
 import { useParams } from "react-router";
 import { useEffect, useState } from "react";
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import FriendButton from "./FriendButton.jsx";
 
 export default function OtherProfile() {
     const userId = useParams();
-    const history = useHistory();
+    const navigate = useNavigate();
 
     // const [first_name, setFirstName] = useState("");
     // const [last_name, setlastName] = useState("");
@@ -26,7 +26,7 @@ export default function OtherProfile() {
                     setProfilePic(data.data.profile_pic);
                     setBio(data.data.bio);
                 } else {
-                    history.push("/profile");
+                    navigate("/profile");
                 }
             });
     }, []);
