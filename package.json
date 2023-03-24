@@ -1,5 +1,5 @@
 {
-    "name": "spiced-social-network",
+    "name": "moltres-social-network",
     "version": "1.0.0",
     "description": "",
     "main": "server/server.js",
@@ -10,9 +10,6 @@
         "dev": "concurrently \"npm:dev:*\" --kill-others",
         "start": "node server/server.js",
         "test": "jest"
-    },
-    "engines": {
-        "node": "14"
     },
     "dependencies": {
         "@babel/cli": "^7.21.0",
@@ -39,8 +36,8 @@
         "jest": "^29.5.0",
         "jest-fetch-mock": "^3.0.3",
         "mini-css-extract-plugin": "^2.7.5",
-        "multer": "^1.4.4",
         "nodemon": "^2.0.22",
+        "multer": "^1.4.5-lts.1",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "react-redux": "^8.0.5",
