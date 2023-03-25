@@ -25,8 +25,8 @@ export default class ForgetPassword extends Component {
         this.setState(
             {
                 [e.target.name]: e.target.value,
-            },
-            () => console.log("this.state: ", this.state)
+            }
+            // () => console.log("this.state: ", this.state)
         );
     }
 
@@ -85,7 +85,7 @@ export default class ForgetPassword extends Component {
         })
             .then((res) => res.json())
             .then((data) => {
-                console.log("data from POST /resetPassword: ", data);
+                // console.log("data from POST /resetPassword: ", data);
 
                 if (data.success === true) {
                     this.setState({ step: 3 });

@@ -157,7 +157,7 @@ app.post("/forgetPassword", (req, res) => {
             const secretCode = cryptoRandomString({
                 length: 6,
             });
-            console.log("password code is: ", secretCode);
+            // console.log("password code is: ", secretCode);
 
             db.insertPasswordCode(email, secretCode).then(() => {
                 if (req.body) {
@@ -198,7 +198,7 @@ app.post("/resetPassword", (req, res) => {
 app.get("/user", checkId, (req, res) => {
     if (req.session.userId) {
         const { userId } = req.session;
-        console.log("session id is: ", req.session.userId);
+        // console.log("session id is: ", req.session.userId);
         db.findUserById(userId)
             .then((data) => {
                 // console.log("user data :", data.rows[0]);

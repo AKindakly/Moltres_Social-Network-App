@@ -23,8 +23,8 @@ export default class Login extends Component {
         this.setState(
             {
                 [e.target.name]: e.target.value,
-            },
-            () => console.log("this.state: ", this.state)
+            }
+            // () => console.log("this.state: ", this.state)
         );
     }
 
@@ -63,7 +63,7 @@ export default class Login extends Component {
             })
                 .then((res) => res.json())
                 .then((data) => {
-                    console.log("data from POST /login: ", data);
+                    // console.log("data from POST /login: ", data);
 
                     if (data.success === true) {
                         this.setState(defaultState);

@@ -27,8 +27,8 @@ export default class Register extends Component {
         this.setState(
             {
                 [e.target.name]: e.target.value,
-            },
-            () => console.log("this.state: ", this.state)
+            }
+            // () => console.log("this.state: ", this.state)
         );
     }
 
@@ -77,7 +77,7 @@ export default class Register extends Component {
             })
                 .then((res) => res.json())
                 .then((data) => {
-                    console.log("data from POST /registration: ", data);
+                    // console.log("data from POST /registration: ", data);
                     // TODO:
                     // if registration was NOT successful -> render err conditionally
                     // if registration WAS successful -> reload the page! trigger page reload to
