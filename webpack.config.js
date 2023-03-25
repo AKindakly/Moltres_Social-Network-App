@@ -19,10 +19,10 @@ module.exports = () => ({
         static: path.join(__dirname, "client", "public"),
         proxy: {
             "/": {
-                target: "http://localhost:3001",
+                target: "http://localhost:8080",
             },
             "/socket.io": {
-                target: "http://localhost:3001",
+                target: "http://localhost:8080",
                 ws: true,
             },
         },
