@@ -1,7 +1,5 @@
-import ProfilePic from "./ProfilePic.jsx";
-import BioEditor from "./BioEditor.jsx";
-
-import "../../../style.css";
+import ProfilePic from "./ProfilePic";
+import BioEditor from "./BioEditor";
 
 export default function Profile(props) {
     return (

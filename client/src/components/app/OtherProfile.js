@@ -1,7 +1,7 @@
 import { useParams } from "react-router";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import FriendButton from "./FriendButton.jsx";
+import FriendButton from "./FriendButton";
 
 export default function OtherProfile() {
     const userId = useParams();

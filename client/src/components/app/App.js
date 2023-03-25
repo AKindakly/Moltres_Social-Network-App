@@ -1,17 +1,15 @@
 import { Component } from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 
-import Logo from "./Logo.jsx";
-import ProfilePic from "./ProfilePic.jsx";
-import Uploader from "./Uploader.jsx";
-import Profile from "./Profile.jsx";
-import FindPeople from "./FindPeople.jsx";
-import OtherProfile from "./OtherProfile.jsx";
-import Friends from "./Friends.jsx";
-import Chat from "./Chat.jsx";
-import Logout from "./Logout.jsx";
-
-import "../../../style.css";
+import Logo from "./Logo";
+import ProfilePic from "./ProfilePic";
+import Uploader from "./Uploader";
+import Profile from "./Profile";
+import FindPeople from "./FindPeople";
+import OtherProfile from "./OtherProfile";
+import Friends from "./Friends";
+import Chat from "./Chat";
+import Logout from "./Logout";
 
 export default class App extends Component {
     constructor(props) {

@@ -1,8 +1,6 @@
 import { Component } from "react";
 import { Link } from "react-router-dom";
 
-import "../../../style.css";
-
 const defaultState = {
     first_name: "",
     last_name: "",

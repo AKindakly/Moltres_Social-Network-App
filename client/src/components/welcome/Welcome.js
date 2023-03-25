@@ -1,9 +1,7 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import Registration from "./Registration.jsx";
-import Login from "./Login.jsx";
-import ForgetPassword from "./ForgetPassword.jsx";
-
-import "../../../style.css";
+import Registration from "./Registration";
+import Login from "./Login";
+import ForgetPassword from "./ForgetPassword";
 
 export default function Welcome() {
     return (

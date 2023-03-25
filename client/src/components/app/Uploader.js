@@ -1,5 +1,3 @@
-import "../../../style.css";
-
 export default function Uploader({ setProfilePic }) {
     const onFormSubmit = (e) => {
         e.preventDefault();

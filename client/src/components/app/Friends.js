@@ -1,38 +1,6 @@
-// import { useState, useEffect } from "react";
-
-// export default function Friends() {
-//     const [friends, setFriends] = useState([]);
-
-//     useEffect(() => {
-//         fetch(`/friendships`, {
-//             method: "GET",
-//         })
-//             .then((res) => res.json())
-//             .then((data) => {
-//                 setFriends(data.friends);
-//                 console.log("data friends ", data.friends);
-//             });
-//     }, []);
-
-//     return (
-//         <>
-//             <ul>
-//                 {friends.map((friend) => (
-//                     <li key={friend.id}>
-//                         <img src={friend.profile_pic} alt="" />
-//                         <p>{friend.full_name}</p>
-//                     </li>
-//                 ))}
-//             </ul>
-//         </>
-//     );
-// }
-
 import { useState, useEffect } from "react";
-import FriendButton from "./FriendButton.jsx";
+import FriendButton from "./FriendButton.js";
 import { Link } from "react-router-dom";
-
-import "../../../style.css";
 
 export default function Friends() {
     const [friends, setFriends] = useState([]);
