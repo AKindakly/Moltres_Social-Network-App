@@ -122,7 +122,7 @@ app.post("/login", (req, res) => {
                 res.json({ message: "email not found" });
             } else {
                 db.authenticate(email, password).then((success) => {
-                    // console.log({ success });
+                    console.log({ success });
                     if (success === true) {
                         // console.log("login session: ", result.rows);
                         req.session.userId = result.rows[0].id;

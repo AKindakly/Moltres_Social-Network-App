@@ -1,8 +1,10 @@
 require("dotenv").config();
 const spicedPg = require("spiced-pg");
-const DATABASE_URL = process.env.DATABASE_URL;
 
-const db = spicedPg(DATABASE_URL);
+const db = spicedPg(
+    process.env.DATABASE_URL ||
+        "postgresql://postgres:postgres@localhost/snetwork"
+);
 
 // bcryptjs magic
 const bcrypt = require("bcryptjs");
