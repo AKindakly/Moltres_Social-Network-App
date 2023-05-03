@@ -1,9 +1,9 @@
 import { useNavigate } from "react-router-dom";
 
 export default function Logout() {
-    function handleLogut() {
-        const navigate = useNavigate();
+    const navigate = useNavigate();
 
+    function handleLogout() {
         fetch("/logout")
             .then((res) => res.json())
             .then(() => {
@@ -11,9 +11,10 @@ export default function Logout() {
                 window.location.reload();
             });
     }
+
     return (
         <>
-            <div className="logout-btn" onClick={handleLogut}>
+            <div className="logout-btn" onClick={handleLogout}>
                 Log Out
             </div>
         </>

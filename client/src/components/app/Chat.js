@@ -25,7 +25,7 @@ export default function Chat() {
     // ...
 
     const x = messages;
-    console.log("messages in x", x);
+    // console.log("messages in x", x);
 
     return (
         // ...

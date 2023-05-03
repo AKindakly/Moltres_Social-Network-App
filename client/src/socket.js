@@ -11,7 +11,7 @@ export const initSocket = (store) => {
         socket = io.connect();
 
         socket.on("chatMessages", (data) => {
-            console.log("chatMessages in socket", data);
+            // console.log("chatMessages in socket", data);
 
             store.dispatch(chatMessagesReceived(data));
         });

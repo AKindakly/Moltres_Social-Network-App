@@ -8,7 +8,7 @@ export default class BioEditor extends Component {
             isEditing: false,
         };
 
-        console.log({ props });
+        // console.log({ props });
         this.handleChange = this.handleChange.bind(this);
     }
 

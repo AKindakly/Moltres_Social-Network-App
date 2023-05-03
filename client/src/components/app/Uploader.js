@@ -12,7 +12,7 @@ export default function Uploader({ setProfilePic }) {
             .then((response) => response.json())
             .then((data) => {
                 if (data.success === true) {
-                    console.log(data.message);
+                    // console.log(data.message);
                     // console.log("data in POST profile_pic ", data);
 
                     const newProfilePic = data.profilePic;

@@ -39,7 +39,7 @@ io.use((socket, next) => {
 });
 
 io.on("connection", async (socket) => {
-    console.log("[social:socket] incoming socket connection", socket.id);
+    // console.log("[social:socket] incoming socket connection", socket.id);
 
     const { userId } = socket.request.session;
     if (!userId) {
@@ -58,7 +58,7 @@ io.on("connection", async (socket) => {
         // store the message in the db
         // console.log("server text", text);
         const newMessage = await db.insertMessage(userId, text);
-        console.log("messages in server", newMessage);
+        // console.log("messages in server", newMessage);
 
         // then broadcast the message to all connected users (included the sender!)
         // hint: you need the sender info (name, picture...) as well

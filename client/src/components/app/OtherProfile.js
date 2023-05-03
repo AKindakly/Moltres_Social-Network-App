@@ -14,7 +14,7 @@ export default function OtherProfile() {
     const [bio, setBio] = useState("");
 
     useEffect(() => {
-        console.log("userID is ", userId.id);
+        // console.log("userID is ", userId.id);
         fetch(`/user/${userId.id}`, {
             method: "get",
         })

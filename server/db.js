@@ -3,7 +3,7 @@ const spicedPg = require("spiced-pg");
 
 const db = spicedPg(
     process.env.DATABASE_URL ||
-        "postgresql://postgres:postgres@localhost/snetwork"
+        "postgres:postgres:postgres@localhost:5432/snetwork"
 );
 
 // bcryptjs magic
